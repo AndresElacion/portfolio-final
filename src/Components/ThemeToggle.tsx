@@ -20,7 +20,7 @@ export default function ThemeToggle() {
         <div className="flex items-center">
             <button
                 onClick={toggleDarkMode}
-                className="relative w-11 h-5 rounded-full transition-colors duration-500 ease-in-out bg-gray-300"
+                className="relative w-11 h-5 rounded-full transition-colors duration-500 ease-in-out bg-gray-400"
             >
                 <span className="sr-only">Toggle theme</span>
                 <div
