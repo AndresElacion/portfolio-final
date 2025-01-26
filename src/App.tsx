@@ -9,10 +9,11 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route element={<Home />}>
+        <Route>
+          <Route path="/" element={<Home />} />
           {/* <Route path="Components" element={<Components />} /> */}
-          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
