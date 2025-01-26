@@ -11,10 +11,6 @@ export default function WelcomeLayout() {
 			title: 'Home',
 		},
 		{
-			id: 'skills',
-			title: 'Skills',
-		},
-		{
 			id: 'projects',
 			title: 'Projects',
 		},
@@ -30,9 +26,9 @@ export default function WelcomeLayout() {
 	return (
 		<div>
 			{/* Main Nav */}
-			<div className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md z-10">
+			<div className="fixed top-0 left-0 w-full bg-transparent dark:bg-transparent backdrop-blur-md shadow-md z-50">
 				<div className="flex container max-w-7xl mx-auto items-center justify-between p-4 dark:text-gray-300">
-					<Link to="/" className="text-md font-bold">cionui</Link>
+					<Link to="/" className="text-md font-bold"><code className="text-2xl">ciondev</code></Link>
 					<nav className="space-x-3 flex">
 						{navItems.map((item) =>
 							<a
