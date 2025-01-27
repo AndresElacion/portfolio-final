@@ -30,7 +30,7 @@ export default function Home() {
                         <img 
                             src="./img/avatar.png" 
                             alt="Andres Elacion III"
-                            className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-blue-500/20"
+                            className="w-38 h-38 rounded-full mx-auto mb-6 border-4 border-blue-500/20"
                         />
 
                         <h1 className="text-4xl sm:text-6xl font-bold dark:text-gray-300 mb-4">
@@ -55,7 +55,7 @@ export default function Home() {
                         {/* CTA Buttons */}
                         <div className="flex justify-center gap-4 mb-8">
                             <a 
-                                href="mailto:andreselacion5@gmail.com" 
+                                href="#contact" 
                                 className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Get in Touch
