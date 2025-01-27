@@ -1,6 +1,7 @@
 import { BlurCircle } from "../Components/BlurCircle";
 import WelcomeLayout from "../Components/WelcomeLayout"
 import Skills from "./Skills"
+import Projects from "./Projects"
 import { Typewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
 
@@ -101,6 +102,26 @@ export default function Home() {
                     
                     <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
                         <Skills />
+                    </div>
+                </section>
+
+                {/* Projects Section */}
+                <section className="relative min-h-screen py-20">
+                    <BlurCircle 
+                        color="bg-cyan-500" 
+                        position="top-1/4 right-0" 
+                        size="w-72 h-72"
+                        opacity="opacity-20"
+                    />
+                    <BlurCircle 
+                        color="bg-purple-500" 
+                        position="bottom-0 left-1/4" 
+                        size="w-96 h-96"
+                        opacity="opacity-20"
+                    />
+                    
+                    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+                        <Projects />
                     </div>
                 </section>
             </main>

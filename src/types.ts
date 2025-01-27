@@ -18,3 +18,16 @@ export interface Skill {
 export interface SkillCategory {
   skills: Skill[];
 }
+
+export interface Project {
+  name: string;
+  slug: string;
+  description: string;
+  image: string;
+  stack: string;
+  url: string;
+}
+
+export interface ProjectCategory {
+  projects: Project[];
+}
