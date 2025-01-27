@@ -31,3 +31,17 @@ export interface Project {
 export interface ProjectCategory {
   projects: Project[];
 }
+
+export interface ContactMessage {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+  created_at: string;
+}
+
+export interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
