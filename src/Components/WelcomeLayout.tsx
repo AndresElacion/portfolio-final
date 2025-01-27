@@ -7,16 +7,16 @@ export default function WelcomeLayout() {
 
 	const navItems = [
 		{
-			id: 'home',
+			id: 'hero',
 			title: 'Home',
+		},
+		{
+			id: 'skills',
+			title: 'Skills',
 		},
 		{
 			id: 'projects',
 			title: 'Projects',
-		},
-		{
-			id: 'featured',
-			title: 'Featured',
 		},
 		{
 			id: 'contact',

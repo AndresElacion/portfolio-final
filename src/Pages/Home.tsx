@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
 
 export default function Home() {
     return (
-        <div>
+        <section id="hero" >
             <WelcomeLayout />
             <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
                 <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10">
@@ -125,6 +125,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-        </div>
+        </section>
     );
 }
