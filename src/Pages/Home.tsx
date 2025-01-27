@@ -4,6 +4,7 @@ import Skills from "./Skills"
 import Projects from "./Projects"
 import { Typewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
+import ContactForm from "./ContactForm";
 
 export default function Home() {
     return (
@@ -54,15 +55,17 @@ export default function Home() {
                         {/* CTA Buttons */}
                         <div className="flex justify-center gap-4 mb-8">
                             <a 
-                                href="#contact" 
+                                href="mailto:andreselacion5@gmail.com" 
                                 className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Get in Touch
                             </a>
                             <a 
-                                href="/resume.pdf" 
+                                href="/asset/ElacionAndresIII.pdf" 
+                                download="Andres_Elacion_Resume.pdf"
                                 className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-600/10 transition-colors"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Download CV
                             </a>
@@ -122,6 +125,26 @@ export default function Home() {
                     
                     <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
                         <Projects />
+                    </div>
+                </section>
+
+                {/* Contact Section */}
+                <section className="relative min-h-screen py-20">
+                    <BlurCircle 
+                        color="bg-cyan-500" 
+                        position="top-1/4 right-0" 
+                        size="w-72 h-72"
+                        opacity="opacity-20"
+                    />
+                    <BlurCircle 
+                        color="bg-purple-500" 
+                        position="bottom-0 left-1/4" 
+                        size="w-96 h-96"
+                        opacity="opacity-20"
+                    />
+                    
+                    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+                        <ContactForm />
                     </div>
                 </section>
             </main>
