@@ -109,7 +109,7 @@ export default function Home() {
                 </section>
 
                 {/* Projects Section */}
-                <section className="relative min-h-screen py-20">
+                <section className="relative min-h-screen pb-20">
                     <BlurCircle 
                         color="bg-cyan-500" 
                         position="top-1/4 right-0" 
