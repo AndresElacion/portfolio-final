@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import { HelmetProvider } from "react-helmet-async";
 
 const NotFound = () => (
   <h1 className="text-center mt-10">404 - Page Not Found</h1>
@@ -7,16 +8,15 @@ const NotFound = () => (
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="Components" element={<Components />} /> */}
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 
-export default App
+export default App;
