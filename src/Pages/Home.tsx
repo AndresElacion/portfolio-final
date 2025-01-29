@@ -1,11 +1,11 @@
 import { BlurCircle } from "../Components/BlurCircle";
 import WelcomeLayout from "../Components/WelcomeLayout"
-import Skills from "./Skills"
-import Projects from "./Projects"
 import { Typewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
 import ContactForm from "./ContactForm";
 import { Helmet } from "react-helmet-async";
+import AllSkills from "./AllSkills";
+import AllProjects from "./AllProjects";
 
 export default function Home() {
     return (
@@ -114,7 +114,7 @@ export default function Home() {
                         />
                         
                         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                            <Skills />
+                            <AllSkills />
                         </div>
                     </section>
 
@@ -134,7 +134,7 @@ export default function Home() {
                         />
                         
                         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                            <Projects />
+                            <AllProjects />
                         </div>
                     </section>
 

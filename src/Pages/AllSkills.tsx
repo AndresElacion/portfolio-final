@@ -1,6 +1,6 @@
 import { skillsData } from '../data/skills';
 
-export default function Skills() {
+export default function AllSkills() {
     return (
         <section id="skills" className="px-4 py-16">
             <div className="text-center pt-8 mb-12 border-t border-gray-200 dark:border-gray-800">

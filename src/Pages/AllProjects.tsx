@@ -1,7 +1,7 @@
 import { projectsData } from '../data/projects';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-export default function Projects() {
+export default function AllProjects() {
     return (
         <section id="projects" className="px-4 py-16 min-h-screen bg-white/5 dark:bg-gray-800/30 backdrop-blur-sm rounded-xl">
             <div className="container mx-auto max-w-6xl">
