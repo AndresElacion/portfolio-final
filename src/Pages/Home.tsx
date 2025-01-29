@@ -5,149 +5,160 @@ import Projects from "./Projects"
 import { Typewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
 import ContactForm from "./ContactForm";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
     return (
-        <section id="hero" >
-            <WelcomeLayout />
-            <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
-                <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10">
-                    <BlurCircle 
-                        color="bg-blue-500" 
-                        position="-top-40 -left-40" 
-                        size="w-96 h-96"
-                        opacity="opacity-30"
-                    />
-                    <BlurCircle 
-                        color="bg-purple-500" 
-                        position="top-40 right-0" 
-                        size="w-96 h-96"
-                        opacity="opacity-20"
-                    />
-                    
-                    <div className="relative text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-                        {/* Optional: Add your image */}
-                        <img 
-                            src="./img/avatar.png" 
-                            alt="Andres Elacion III"
-                            className="w-38 h-38 rounded-full mx-auto mb-6 border-4 border-blue-500/20"
+        <>
+            <Helmet>
+                <title>Andres Elacion III | Full Stack Developer</title>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Experienced Full Stack Developer specializing in React, TypeScript, and modern web development." />
+                <meta name="keywords" content="full stack developer, react developer, typescript, laravel developer, php, web development" />
+                <meta name="author" content="Andres Elacion III" />
+            </Helmet>
+            <section id="hero" >
+                <WelcomeLayout />
+                <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
+                    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10">
+                        <BlurCircle 
+                            color="bg-blue-500" 
+                            position="-top-40 -left-40" 
+                            size="w-96 h-96"
+                            opacity="opacity-30"
                         />
-
-                        <h1 className="text-4xl sm:text-6xl font-bold dark:text-gray-300 mb-4">
-                            Andres Elacion III
-                        </h1>
-
-                        <h2 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-6">
-                            <Typewriter
-                                words={['Full Stack Developer', 'AWS', 'GCP', 'UI/UX Enthusiast']}
-                                loop={0}
-                                cursor
-                                cursorStyle='|'
+                        <BlurCircle 
+                            color="bg-purple-500" 
+                            position="top-40 right-0" 
+                            size="w-96 h-96"
+                            opacity="opacity-20"
+                        />
+                        
+                        <div className="relative text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+                            {/* Optional: Add your image */}
+                            <img 
+                                src="./img/avatar.png" 
+                                alt="Andres Elacion III"
+                                className="w-38 h-38 rounded-full mx-auto mb-6 border-4 border-blue-500/20"
                             />
-                        </h2>
 
-                        <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
-                            A Full Stack Web Developer from the Philippines, crafting stunning, 
-                            user-friendly websites and web apps, with expertise in deploying on AWS 
-                            EC2 and GCP, setting up SSL certificates.
-                        </p>
+                            <h1 className="text-4xl sm:text-6xl font-bold dark:text-gray-300 mb-4">
+                                Andres Elacion III
+                            </h1>
 
-                        {/* CTA Buttons */}
-                        <div className="flex justify-center gap-4 mb-8">
-                            <a 
-                                href="#contact" 
-                                className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                            >
-                                Get in Touch
-                            </a>
-                            <a 
-                                href="/asset/ElacionAndresIII.pdf" 
-                                download="Andres_Elacion_Resume.pdf"
-                                className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-600/10 transition-colors"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Download CV
-                            </a>
+                            <h2 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-6">
+                                <Typewriter
+                                    words={['Full Stack Developer', 'AWS', 'GCP', 'UI/UX Enthusiast']}
+                                    loop={0}
+                                    cursor
+                                    cursorStyle='|'
+                                />
+                            </h2>
+
+                            <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
+                                A Full Stack Web Developer from the Philippines, crafting stunning, 
+                                user-friendly websites and web apps, with expertise in deploying on AWS 
+                                EC2 and GCP, setting up SSL certificates.
+                            </p>
+
+                            {/* CTA Buttons */}
+                            <div className="flex justify-center gap-4 mb-8">
+                                <a 
+                                    href="#contact" 
+                                    className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                                >
+                                    Get in Touch
+                                </a>
+                                <a 
+                                    href="/asset/ElacionAndresIII.pdf" 
+                                    download="Andres_Elacion_Resume.pdf"
+                                    className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-600/10 transition-colors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Download CV
+                                </a>
+                            </div>
+
+                            {/* Social Links */}
+                            <div className="flex justify-center gap-4 mb-12">
+                                <a href="https://github.com/AndresElacion" target="_blank" className="text-2xl hover:text-blue-600 transition-colors">
+                                    <FaGithub />
+                                </a>
+                                <a href="https://www.linkedin.com/in/andres-elacion/" target="_blank" className="text-2xl hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a>
+                            </div>
+
+                            {/* Scroll Indicator */}
+                            <div className="animate-bounce text-gray-400">
+                                <a href="#skills"><FaArrowDown className="mx-auto" /></a>
+                            </div>
                         </div>
+                    </section>
 
-                        {/* Social Links */}
-                        <div className="flex justify-center gap-4 mb-12">
-                            <a href="https://github.com/AndresElacion" target="_blank" className="text-2xl hover:text-blue-600 transition-colors">
-                                <FaGithub />
-                            </a>
-                            <a href="https://www.linkedin.com/in/andres-elacion/" target="_blank" className="text-2xl hover:text-blue-600 transition-colors">
-                                <FaLinkedin />
-                            </a>
+                    {/* Skills Section */}
+                    <section className="relative min-h-screen py-20">
+                        <BlurCircle 
+                            color="bg-cyan-500" 
+                            position="top-1/4 right-0" 
+                            size="w-72 h-72"
+                            opacity="opacity-20"
+                        />
+                        <BlurCircle 
+                            color="bg-purple-500" 
+                            position="bottom-0 left-1/4" 
+                            size="w-96 h-96"
+                            opacity="opacity-20"
+                        />
+                        
+                        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+                            <Skills />
                         </div>
+                    </section>
 
-                        {/* Scroll Indicator */}
-                        <div className="animate-bounce text-gray-400">
-                            <a href="#skills"><FaArrowDown className="mx-auto" /></a>
+                    {/* Projects Section */}
+                    <section className="relative min-h-screen pb-20">
+                        <BlurCircle 
+                            color="bg-cyan-500" 
+                            position="top-1/4 right-0" 
+                            size="w-72 h-72"
+                            opacity="opacity-20"
+                        />
+                        <BlurCircle 
+                            color="bg-purple-500" 
+                            position="bottom-0 left-1/4" 
+                            size="w-96 h-96"
+                            opacity="opacity-20"
+                        />
+                        
+                        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+                            <Projects />
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                {/* Skills Section */}
-                <section className="relative min-h-screen py-20">
-                    <BlurCircle 
-                        color="bg-cyan-500" 
-                        position="top-1/4 right-0" 
-                        size="w-72 h-72"
-                        opacity="opacity-20"
-                    />
-                    <BlurCircle 
-                        color="bg-purple-500" 
-                        position="bottom-0 left-1/4" 
-                        size="w-96 h-96"
-                        opacity="opacity-20"
-                    />
-                    
-                    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                        <Skills />
-                    </div>
-                </section>
-
-                {/* Projects Section */}
-                <section className="relative min-h-screen pb-20">
-                    <BlurCircle 
-                        color="bg-cyan-500" 
-                        position="top-1/4 right-0" 
-                        size="w-72 h-72"
-                        opacity="opacity-20"
-                    />
-                    <BlurCircle 
-                        color="bg-purple-500" 
-                        position="bottom-0 left-1/4" 
-                        size="w-96 h-96"
-                        opacity="opacity-20"
-                    />
-                    
-                    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                        <Projects />
-                    </div>
-                </section>
-
-                {/* Contact Section */}
-                <section className="relative min-h-screen py-20">
-                    <BlurCircle 
-                        color="bg-cyan-500" 
-                        position="top-1/4 right-0" 
-                        size="w-72 h-72"
-                        opacity="opacity-20"
-                    />
-                    <BlurCircle 
-                        color="bg-purple-500" 
-                        position="bottom-0 left-1/4" 
-                        size="w-96 h-96"
-                        opacity="opacity-20"
-                    />
-                    
-                    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                        <ContactForm />
-                    </div>
-                </section>
-            </main>
-        </section>
+                    {/* Contact Section */}
+                    <section className="relative min-h-screen py-20">
+                        <BlurCircle 
+                            color="bg-cyan-500" 
+                            position="top-1/4 right-0" 
+                            size="w-72 h-72"
+                            opacity="opacity-20"
+                        />
+                        <BlurCircle 
+                            color="bg-purple-500" 
+                            position="bottom-0 left-1/4" 
+                            size="w-96 h-96"
+                            opacity="opacity-20"
+                        />
+                        
+                        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+                            <ContactForm />
+                        </div>
+                    </section>
+                </main>
+            </section>
+        </>
     );
 }
